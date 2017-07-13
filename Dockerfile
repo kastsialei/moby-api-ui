@@ -8,7 +8,5 @@ ADD entrypoint.sh /opt/entrypoint.sh
 
 ADD ./dist/* /usr/share/nginx/html/
 ADD nginx.conf /etc/nginx/
-
+EXPOSE 8080
 ENTRYPOINT ["sh", "/opt/entrypoint.sh"]
-
-
